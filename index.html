@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <style>
+        .container {
+            max-width: 1024px;
+            margin: 50px auto;
+            background-color: lightgray;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 150px 500px 150px;
+        }
+
+        header,
+        main,
+        footer {
+            border: 1px solid tomato;
+        }
+
+        footer {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        footer>div {
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid tomato;
+        }
+
+
+        footer .social-group {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        footer .social {
+            width: 50px;
+            height: 50px;
+            /* border: 1px solid rgb(71, 105, 255); */
+            background-image: url("footer_socials.png");
+            background-repeat: no-repeat;
+            margin: 3px;
+        }
+
+        .social-group .social:nth-child(1) {
+            background-position: 7px 7px;
+        }
+
+        .social-group .social:nth-child(1):hover {
+            background-position: 7px -62px;
+        }
+
+        .social-group .social:nth-child(2) {
+            background-position: 7px -148px;
+        }
+
+        .social-group .social:nth-child(2):hover {
+            background-position: 7px -239px;
+        }
+
+        .social-group .social:nth-child(3) {
+            background-position: 7px -443px;
+        }
+
+        .social-group .social:nth-child(3):hover {
+            background-position: 7px -348px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum sin.</header>
+        <main>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, sunt reiciendis. Quae facere numquam
+            laborum doloremque illo asperiores at harum incidunt, atque dolores facilis non, totam nemo nobis
+            voluptatibus vel!</main>
+        <footer>
+            <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</div>
+            <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</div>
+            <div class="social-group">
+                <div class="social"></div>
+                <div class="social"></div>
+                <div class="social"></div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>
